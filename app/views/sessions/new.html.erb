@@ -1,0 +1,18 @@
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<h3> <%= @user_created_message %> </h3>
+
+<h1>Log-in!</h1>
+
+<%= form_for @user, :url => { :controller => "sessions", :action => "create" } do |f| %> 
+    E-mail: <%= f.text_field :email %><br />
+    Password: <%= f.password_field :password %><br />
+    <%=f.submit 'Log yourself in' %> 
+
+<% end %>
+
+<%= link_to 'New user? Create an account here', new_user_path %>
