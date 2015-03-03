@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
+<<<<<<< HEAD
   test "should get index" do
     get :index
     assert_response :success
@@ -16,4 +17,9 @@ class UsersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+=======
+  # test "the truth" do
+  #   assert true
+  # end
+>>>>>>> 2335db8cf13bad5c4a249ed117a9ecb5e3d21a8d
 end

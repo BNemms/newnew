@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #class UsersController < ApplicationController
   #def index
   #end
@@ -19,3 +20,20 @@ class UsersController < ApplicationController
 end
 
 
+=======
+class UsersController < ApplicationController
+	def new
+		@user = User.new
+	new
+end
+
+def create
+	@user = User.new(param[:user])
+	if @user.save
+		redirect_to root_url, :notice => "Signed up!"
+else
+	render "new"
+end
+end
+end
+>>>>>>> 2335db8cf13bad5c4a249ed117a9ecb5e3d21a8d

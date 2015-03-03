@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'password_resets/new'
 
 #get 'posts/index'
@@ -19,6 +20,14 @@ get 'sessions/index'
   resources :users, only: [:index, :new, :create, :show]
   
   
+=======
+  get "sign_up" => "user#new", :as=> "sign_up"
+  root :up => "user#new"
+  resources :users
+end
+
+
+>>>>>>> 2335db8cf13bad5c4a249ed117a9ecb5e3d21a8d
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
