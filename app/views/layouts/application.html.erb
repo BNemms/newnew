@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>Brandnewblog</title>
+
+  <br><br><br><br>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -16,6 +18,39 @@
 
 </head>
 <body>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar">here is more</span>
+        <span class="icon-bar">more as well</span>
+        <span class="icon-bar">more ...</span>
+      </button>
+      <a class="navbar-brand" href="#">HomePage</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="">UsersNew</a></li>
+        <li><a href="index">ShowPage</a></li>
+        <li><a href="#houses">Posts</a></li>
+        <li class="active"><a href="">Other Users</a></li>
+        <li><a href="#houses">Contact</a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+
+
+
+
 <%= session["user_id"].inspect %>
 <%= yield %>
 
